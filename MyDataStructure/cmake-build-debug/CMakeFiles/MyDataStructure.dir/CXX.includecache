@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
+KMP.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h
+iostream
+-
+
+/Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h
+stdio.h
+-
+string
+-
+
+/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
+Maze.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
+iostream
+-
+
+/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
+
+/Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
+iostream
+-
+Maze.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
+
