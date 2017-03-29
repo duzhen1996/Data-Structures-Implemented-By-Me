@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/zhendu/study/ClionProjects/MyDataStructure
+CMAKE_SOURCE_DIR = /Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles /Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug/CMakeFiles /Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -150,6 +150,33 @@ KMP.cpp.s:
 	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/KMP.cpp.s
 .PHONY : KMP.cpp.s
 
+Maze.o: Maze.cpp.o
+
+.PHONY : Maze.o
+
+# target to build an object file
+Maze.cpp.o:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/Maze.cpp.o
+.PHONY : Maze.cpp.o
+
+Maze.i: Maze.cpp.i
+
+.PHONY : Maze.i
+
+# target to preprocess a source file
+Maze.cpp.i:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/Maze.cpp.i
+.PHONY : Maze.cpp.i
+
+Maze.s: Maze.cpp.s
+
+.PHONY : Maze.s
+
+# target to generate assembly for a file
+Maze.cpp.s:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/Maze.cpp.s
+.PHONY : Maze.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -189,6 +216,9 @@ help:
 	@echo "... KMP.o"
 	@echo "... KMP.i"
 	@echo "... KMP.s"
+	@echo "... Maze.o"
+	@echo "... Maze.i"
+	@echo "... Maze.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

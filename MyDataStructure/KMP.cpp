@@ -93,6 +93,8 @@ int KMPSearch(string patch_string, string goal_string) {
 
 
 
+
+
     //不可能到这里
     return -2;
 }

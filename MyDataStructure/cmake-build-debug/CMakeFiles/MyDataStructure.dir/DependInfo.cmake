@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp" "/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/KMP.cpp.o"
-  "/Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp" "/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/main.cpp.o"
+  "/Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/KMP.cpp" "/Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/KMP.cpp.o"
+  "/Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/Maze.cpp" "/Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/Maze.cpp.o"
+  "/Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/main.cpp" "/Users/zhendu/study/git/Data-Structures-Implemented-By-Me/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
