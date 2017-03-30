@@ -14,7 +14,7 @@
 //我们首先需要去声明一个可以表达方向的枚举
 enum Direction {
     //向上
-            UP = 0,
+    UP = 0,
     DOWN = 1,
     LEFT = 2,
     RIGHT = 3,
@@ -22,6 +22,7 @@ enum Direction {
     UPRIGHT = 5,
     DOWNLEFT = 6,
     DOWNRIGHT = 7,
+    NONE = 8
 };
 
 struct Location {
@@ -30,12 +31,22 @@ struct Location {
     int y = 0;
 };
 
+
+//申请一个数组来保存历史数据
+//之前打算使用枚举的，发现不好用，我们使用int来表达方向
+struct History{
+    Location location;
+    int direction;
+};
+
+
+
 //设置移动的数组，第一个形参是移动的防线，第二个形参是当前的位置
-void move(Direction direction, Location &location);
+Location move(int direction, Location location);
 
 //我们这个是路径查找的核心函数，会打印一个路径出来。是每一步的位置，输入是一个二维数组
 //
-void getPath(int**& maze, int m, int n);
+void getPath(int** maze, int m, int n);
 
 
 #endif //MYDATASTRUCTURE_MAZE_H_H
