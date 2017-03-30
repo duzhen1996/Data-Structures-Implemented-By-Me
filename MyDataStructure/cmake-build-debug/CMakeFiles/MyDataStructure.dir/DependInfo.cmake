@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp" "/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/KMP.cpp.o"
   "/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp" "/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/Maze.cpp.o"
   "/Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp" "/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/main.cpp.o"
+  "/Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp" "/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

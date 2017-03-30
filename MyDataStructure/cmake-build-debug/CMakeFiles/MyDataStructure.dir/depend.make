@@ -7,6 +7,9 @@ CMakeFiles/MyDataStructure.dir/KMP.cpp.o: ../KMP.h
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.cpp
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.h
 
-CMakeFiles/MyDataStructure.dir/main.cpp.o: ../Maze.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../main.cpp
+CMakeFiles/MyDataStructure.dir/main.cpp.o: ../nifix2postfix.h
+
+CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: ../nifix2postfix.cpp
+CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: ../nifix2postfix.h
 

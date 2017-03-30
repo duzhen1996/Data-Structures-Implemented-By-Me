@@ -204,6 +204,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+nifix2postfix.o: nifix2postfix.cpp.o
+
+.PHONY : nifix2postfix.o
+
+# target to build an object file
+nifix2postfix.cpp.o:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o
+.PHONY : nifix2postfix.cpp.o
+
+nifix2postfix.i: nifix2postfix.cpp.i
+
+.PHONY : nifix2postfix.i
+
+# target to preprocess a source file
+nifix2postfix.cpp.i:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.i
+.PHONY : nifix2postfix.cpp.i
+
+nifix2postfix.s: nifix2postfix.cpp.s
+
+.PHONY : nifix2postfix.s
+
+# target to generate assembly for a file
+nifix2postfix.cpp.s:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.s
+.PHONY : nifix2postfix.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,6 +249,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... nifix2postfix.o"
+	@echo "... nifix2postfix.i"
+	@echo "... nifix2postfix.s"
 .PHONY : help
 
 
