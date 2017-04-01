@@ -8,13 +8,23 @@
 
 #include <iostream>
 #include <string>
-#include "nifix2postfix.h"
+#include "LinkedList.h"
 using namespace std;
 
 int main(int argc, const char *argv[]) {
+    LinkedList<int>* linkedList = new LinkedList<int>(1);
 
-    nifix2postfix("((((A/B)-C)+(D*E))-(A*C))");
+    linkedList->insert(0, 2);
+    linkedList->insert(1, 3);
+    linkedList->insert(0, 4);
 
+    linkedList->printLinkedList();
+
+    linkedList->deleteItem(2);
+
+
+
+    linkedList->printLinkedList();
 
     return 0;
 }

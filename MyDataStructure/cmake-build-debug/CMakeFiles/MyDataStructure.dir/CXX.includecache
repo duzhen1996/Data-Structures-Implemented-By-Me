@@ -18,6 +18,10 @@ stdio.h
 string
 -
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedList.h
+iostream
+-
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
 Maze.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
@@ -31,8 +35,8 @@ iostream
 -
 string
 -
-nifix2postfix.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.h
+LinkedList.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedList.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string
