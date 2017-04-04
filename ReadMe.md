@@ -225,13 +225,40 @@ merge(A[],B[],m,n){
 	//两个数组中有其中一个数组还会剩余元素，我们将其拷到要返回的目标数组中
 	for i1 <- i to m
 		do
-		
+		result[q] = A[i1]
+		q++
+	
+	for j1 <- j to n
+		do
+		result[q] = A[j1]
+		q++
+}
+```
+
+以上就是归并排序的核心部分，但是实际上外部还需要一个函数来进行驱动
+
+```
+//归并排序，形参为要排序的乱序数组
+merge_sort(A[],len){
+	//将数组进行拆分
+	mid = len/2
+	A1[mid]
+	A2[len-mid-1]
+	for i <- 0 to mid
+		do
+		A1[i] = A[i]
+	for j <- 0 to len-mid-1
+		do 
+		A2[]
+	merge_sort()
 }
 ```
 
 
 
 ### 改造归并排序求逆序对
+
+
 
 
 
