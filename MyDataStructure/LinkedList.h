@@ -6,7 +6,7 @@
 #define MYDATASTRUCTURE_LINKEDLIST_H
 
 #include <iostream>
-
+#include <cstdlib>
 using namespace std;
 
 
@@ -171,6 +171,14 @@ T LinkedList<T>::deleteItem(int position) {
     return returnValue;
 }
 
+template <class T>
+LinkedList<T>::~LinkedList() {
+    //这里进行所有链表节点的析构操作
+    //不断删除第一个元素就好
+    for (int i = 0; i < length; ++i) {
+        deleteItem(0);
+    }
+}
 
 
 template<class T>

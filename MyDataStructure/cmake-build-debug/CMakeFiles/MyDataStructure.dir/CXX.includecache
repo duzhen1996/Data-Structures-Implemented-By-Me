@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/DLinkedList.h
+iostream
+-
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
 KMP.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h
@@ -16,10 +20,6 @@ iostream
 stdio.h
 -
 string
--
-
-/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedList.h
-iostream
 -
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
@@ -35,8 +35,8 @@ iostream
 -
 string
 -
-LinkedList.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedList.h
+DLinkedList.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/DLinkedList.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string

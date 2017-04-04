@@ -8,23 +8,38 @@
 
 #include <iostream>
 #include <string>
-#include "LinkedList.h"
+#include "DLinkedList.h"
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-    LinkedList<int>* linkedList = new LinkedList<int>(1);
+    DLinkedList<int>* list = new DLinkedList<int>();
 
-    linkedList->insert(0, 2);
-    linkedList->insert(1, 3);
-    linkedList->insert(0, 4);
+    list->addRight(1);
+    list->addRight(2);
+    list->addRight(3);
+    list->addRight(4);
+    list->addRight(5);
 
-    linkedList->printLinkedList();
+    list -> printNowItem();
 
-    linkedList->deleteItem(2);
+    list->goRight();
+    list->printNowItem();
+
+    list->goLeft();
+    list->goLeft();
+    list->printNowItem();
+
+    list->printLinkedList();
+
+    list->toFirst();
+
+    list->goLeft();
+
+    list->deleteItem();
+
+    list->printLinkedList();
 
 
-
-    linkedList->printLinkedList();
-
+    delete list;
     return 0;
 }
