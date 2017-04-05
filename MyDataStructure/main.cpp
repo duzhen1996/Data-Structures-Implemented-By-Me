@@ -7,39 +7,35 @@
 //
 
 #include <iostream>
-#include <string>
-#include "DLinkedList.h"
+#include "BinaryTree.h"
+
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-    DLinkedList<int>* list = new DLinkedList<int>();
+    BinaryTree<int> *tree = new BinaryTree<int>(1);
 
-    list->addRight(1);
-    list->addRight(2);
-    list->addRight(3);
-    list->addRight(4);
-    list->addRight(5);
+    tree->editLeft(2);
 
-    list -> printNowItem();
+    tree->editRight(3);
 
-    list->goRight();
-    list->printNowItem();
+    tree->goRightChild();
 
-    list->goLeft();
-    list->goLeft();
-    list->printNowItem();
+    tree->editRight(4);
 
-    list->printLinkedList();
+    tree->editLeft(5);
 
-    list->toFirst();
+    tree->toRoot();
 
-    list->goLeft();
+    tree->goRightChild();
 
-    list->deleteItem();
+    tree->delChildTree(tree->getNowIndex());
 
-    list->printLinkedList();
+    int *contentArr = tree->getTreeContentPtr();
+
+    for (int i = 0; i < 256; ++i) {
+        cout << i << " : " << contentArr[i] << endl;
+    }
 
 
-    delete list;
     return 0;
 }

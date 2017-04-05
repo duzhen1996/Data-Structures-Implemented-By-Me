@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhendu/study/ClionProjects/MyDataStructure/DLinkedList.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/BinaryTree.h
 iostream
 -
 
@@ -33,10 +33,8 @@ iostream
 /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 iostream
 -
-string
--
-DLinkedList.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/DLinkedList.h
+BinaryTree.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/BinaryTree.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string
