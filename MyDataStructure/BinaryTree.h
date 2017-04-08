@@ -6,7 +6,7 @@
 #define MYDATASTRUCTURE_BINARYTREE_H
 
 #include <iostream>
-
+//二叉树的数组实现
 using namespace std;
 
 template<class T>

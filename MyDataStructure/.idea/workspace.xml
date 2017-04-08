@@ -26,11 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+            <state relative-caret-position="210">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
               <folding>
                 <element signature="e#120#139#0" expanded="true" />
               </folding>
@@ -41,21 +41,55 @@
       <file leaf-file-name="BinaryTree.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BinaryTree.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-841">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="120">
+              <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
               <folding>
-                <element signature="e#163#172#0" expanded="true" />
-                <element signature="e#774#783#0" expanded="true" />
-                <element signature="e#1014#1023#0" expanded="true" />
-                <element signature="e#1084#1093#0" expanded="true" />
-                <element signature="e#1369#1378#0" expanded="true" />
-                <element signature="e#1667#1676#0" expanded="true" />
-                <element signature="e#1884#1893#0" expanded="true" />
-                <element signature="e#2110#2119#0" expanded="true" />
-                <element signature="e#2188#2197#0" expanded="true" />
-                <element signature="e#2296#2305#0" expanded="true" />
-                <element signature="e#2752#2761#0" expanded="true" />
-                <element signature="e#2829#2838#0" expanded="true" />
+                <element signature="e#173#182#0" expanded="true" />
+                <element signature="e#784#793#0" expanded="true" />
+                <element signature="e#1024#1033#0" expanded="true" />
+                <element signature="e#1094#1103#0" expanded="true" />
+                <element signature="e#1379#1388#0" expanded="true" />
+                <element signature="e#1677#1686#0" expanded="true" />
+                <element signature="e#1894#1903#0" expanded="true" />
+                <element signature="e#2120#2129#0" expanded="true" />
+                <element signature="e#2198#2207#0" expanded="true" />
+                <element signature="e#2306#2315#0" expanded="true" />
+                <element signature="e#2762#2771#0" expanded="true" />
+                <element signature="e#2839#2848#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Queue.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Queue.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="268">
+              <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinkedBTree.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LinkedBTree.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+              <folding>
+                <element signature="e#114#133#0" expanded="true" />
+                <element signature="e#184#193#0" expanded="true" />
+                <element signature="e#233#242#0" expanded="true" />
+                <element signature="e#666#675#0" expanded="true" />
+                <element signature="e#848#857#0" expanded="true" />
+                <element signature="e#1124#1133#0" expanded="true" />
+                <element signature="e#1404#1413#0" expanded="true" />
+                <element signature="e#1558#1567#0" expanded="true" />
+                <element signature="e#1714#1723#0" expanded="true" />
+                <element signature="e#1798#1807#0" expanded="true" />
+                <element signature="e#1940#1949#0" expanded="true" />
+                <element signature="e#2006#2015#0" expanded="true" />
+                <element signature="e#2080#2089#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +108,6 @@
         <option value="$PROJECT_DIR$/makefile" />
         <option value="$PROJECT_DIR$/KMP.h" />
         <option value="$PROJECT_DIR$/Queue.cpp" />
-        <option value="$PROJECT_DIR$/Queue.h" />
         <option value="$PROJECT_DIR$/Maze.h.h" />
         <option value="$PROJECT_DIR$/KMP.cpp" />
         <option value="$PROJECT_DIR$/Maze.h" />
@@ -87,8 +120,10 @@
         <option value="$PROJECT_DIR$/test.cpp" />
         <option value="$PROJECT_DIR$/LinkedList.h" />
         <option value="$PROJECT_DIR$/DLinkedList.h" />
-        <option value="$PROJECT_DIR$/BinaryTree.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/BinaryTree.h" />
+        <option value="$PROJECT_DIR$/Queue.h" />
+        <option value="$PROJECT_DIR$/LinkedBTree.h" />
       </list>
     </option>
   </component>
@@ -400,23 +435,25 @@
       <workItem from="1491286838096" duration="81000" />
       <workItem from="1491288318232" duration="6541000" />
       <workItem from="1491373793075" duration="2615000" />
-      <workItem from="1491382622870" duration="3864000" />
+      <workItem from="1491382622870" duration="4010000" />
+      <workItem from="1491571897639" duration="1167000" />
+      <workItem from="1491574298606" duration="283000" />
+      <workItem from="1491666657710" duration="3168000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52942000" />
+    <option name="totallyTimeSpent" value="57706000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26180258" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.45277777" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5472222" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26987952" sideWeight="0.45277777" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26987952" sideWeight="0.45277777" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -424,6 +461,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.45277777" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -466,13 +504,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/KMP.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Queue.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1605">
@@ -724,13 +755,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Queue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Maze.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2610">
@@ -800,33 +824,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BinaryTree.h">
+    <entry file="file://$PROJECT_DIR$/Queue.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-841">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#163#172#0" expanded="true" />
-            <element signature="e#774#783#0" expanded="true" />
-            <element signature="e#1014#1023#0" expanded="true" />
-            <element signature="e#1084#1093#0" expanded="true" />
-            <element signature="e#1369#1378#0" expanded="true" />
-            <element signature="e#1667#1676#0" expanded="true" />
-            <element signature="e#1884#1893#0" expanded="true" />
-            <element signature="e#2110#2119#0" expanded="true" />
-            <element signature="e#2188#2197#0" expanded="true" />
-            <element signature="e#2296#2305#0" expanded="true" />
-            <element signature="e#2752#2761#0" expanded="true" />
-            <element signature="e#2829#2838#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="268">
+          <caret line="65" column="13" lean-forward="false" selection-start-line="65" selection-start-column="13" selection-end-line="65" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="44" lean-forward="false" selection-start-line="30" selection-start-column="44" selection-end-line="30" selection-end-column="44" />
+        <state relative-caret-position="210">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
           <folding>
             <element signature="e#120#139#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+          <folding>
+            <element signature="e#173#182#0" expanded="true" />
+            <element signature="e#784#793#0" expanded="true" />
+            <element signature="e#1024#1033#0" expanded="true" />
+            <element signature="e#1094#1103#0" expanded="true" />
+            <element signature="e#1379#1388#0" expanded="true" />
+            <element signature="e#1677#1686#0" expanded="true" />
+            <element signature="e#1894#1903#0" expanded="true" />
+            <element signature="e#2120#2129#0" expanded="true" />
+            <element signature="e#2198#2207#0" expanded="true" />
+            <element signature="e#2306#2315#0" expanded="true" />
+            <element signature="e#2762#2771#0" expanded="true" />
+            <element signature="e#2839#2848#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedBTree.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+          <folding>
+            <element signature="e#114#133#0" expanded="true" />
+            <element signature="e#184#193#0" expanded="true" />
+            <element signature="e#233#242#0" expanded="true" />
+            <element signature="e#666#675#0" expanded="true" />
+            <element signature="e#848#857#0" expanded="true" />
+            <element signature="e#1124#1133#0" expanded="true" />
+            <element signature="e#1404#1413#0" expanded="true" />
+            <element signature="e#1558#1567#0" expanded="true" />
+            <element signature="e#1714#1723#0" expanded="true" />
+            <element signature="e#1798#1807#0" expanded="true" />
+            <element signature="e#1940#1949#0" expanded="true" />
+            <element signature="e#2006#2015#0" expanded="true" />
+            <element signature="e#2080#2089#0" expanded="true" />
           </folding>
         </state>
       </provider>
