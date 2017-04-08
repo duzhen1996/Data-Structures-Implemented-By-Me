@@ -7,35 +7,20 @@
 //
 
 #include <iostream>
-#include "BinaryTree.h"
+#include "LinkedBTree.h"
 
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-    BinaryTree<int> *tree = new BinaryTree<int>(1);
+    LinkedBTree<int>* linkedBTree = new LinkedBTree<int>(1);
 
-    tree->editLeft(2);
+    linkedBTree->addRight(2);
+    linkedBTree->addLeft(3);
+    
 
-    tree->editRight(3);
+    cout << linkedBTree->readNow() << endl;
 
-    tree->goRightChild();
-
-    tree->editRight(4);
-
-    tree->editLeft(5);
-
-    tree->toRoot();
-
-    tree->goRightChild();
-
-    tree->delChildTree(tree->getNowIndex());
-
-    int *contentArr = tree->getTreeContentPtr();
-
-    for (int i = 0; i < 256; ++i) {
-        cout << i << " : " << contentArr[i] << endl;
-    }
-
+    delete linkedBTree;
 
     return 0;
 }
