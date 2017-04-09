@@ -18,12 +18,6 @@ stdio.h
 string
 -
 
-/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h
-iostream
--
-Queue.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h
-
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
 Maze.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
@@ -32,17 +26,15 @@ iostream
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
 
-/Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h
-stdio.h
--
+/Users/zhendu/study/ClionProjects/MyDataStructure/QuickSort.h
 iostream
 -
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 iostream
 -
-LinkedBTree.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h
+QuickSort.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/QuickSort.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string

@@ -26,13 +26,27 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding>
                 <element signature="e#120#139#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QuickSort.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/QuickSort.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+              <folding>
+                <element signature="e#161#170#0" expanded="true" />
+                <element signature="e#235#244#0" expanded="true" />
+                <element signature="e#371#380#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/Queue.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
-              <caret line="75" column="14" lean-forward="true" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+              <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -75,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/LinkedBTree.h">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
-              <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+              <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
               <folding>
                 <element signature="e#114#133#0" expanded="true" />
                 <element signature="e#184#193#0" expanded="true" />
@@ -123,6 +137,7 @@
         <option value="$PROJECT_DIR$/BinaryTree.h" />
         <option value="$PROJECT_DIR$/Queue.h" />
         <option value="$PROJECT_DIR$/LinkedBTree.h" />
+        <option value="$PROJECT_DIR$/QuickSort.h" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -438,18 +453,19 @@
       <workItem from="1491382622870" duration="4010000" />
       <workItem from="1491571897639" duration="1167000" />
       <workItem from="1491574298606" duration="283000" />
-      <workItem from="1491666657710" duration="3550000" />
+      <workItem from="1491666657710" duration="3590000" />
+      <workItem from="1491735814684" duration="4221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58088000" />
+    <option name="totallyTimeSpent" value="62349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2725322" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2761087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.45277777" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -499,18 +515,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="11" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Queue.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1605">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Maze.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -806,20 +818,20 @@
         <state relative-caret-position="178">
           <caret line="174" column="1" lean-forward="true" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
           <folding>
-            <element signature="e#166#175#0" expanded="true" />
-            <element signature="e#204#213#0" expanded="true" />
-            <element signature="e#704#713#0" expanded="true" />
-            <element signature="e#957#966#0" expanded="true" />
-            <element signature="e#1157#1166#0" expanded="true" />
-            <element signature="e#1355#1364#0" expanded="true" />
-            <element signature="e#1731#1740#0" expanded="true" />
-            <element signature="e#2057#2066#0" expanded="true" />
-            <element signature="e#2128#2137#0" expanded="true" />
-            <element signature="e#2726#2735#0" expanded="true" />
-            <element signature="e#3100#3109#0" expanded="true" />
-            <element signature="e#3269#3278#0" expanded="true" />
-            <element signature="e#3446#3455#0" expanded="true" />
-            <element signature="e#3643#3652#0" expanded="true" />
+            <element signature="e#166#175#0" expanded="false" />
+            <element signature="e#204#213#0" expanded="false" />
+            <element signature="e#704#713#0" expanded="false" />
+            <element signature="e#957#966#0" expanded="false" />
+            <element signature="e#1157#1166#0" expanded="false" />
+            <element signature="e#1355#1364#0" expanded="false" />
+            <element signature="e#1731#1740#0" expanded="false" />
+            <element signature="e#2057#2066#0" expanded="false" />
+            <element signature="e#2128#2137#0" expanded="false" />
+            <element signature="e#2726#2735#0" expanded="false" />
+            <element signature="e#3100#3109#0" expanded="false" />
+            <element signature="e#3269#3278#0" expanded="false" />
+            <element signature="e#3446#3455#0" expanded="false" />
+            <element signature="e#3643#3652#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -845,10 +857,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Queue.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="75" column="14" lean-forward="false" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LinkedBTree.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
-          <caret line="161" column="0" lean-forward="true" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+          <caret line="161" column="0" lean-forward="false" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
           <folding>
             <element signature="e#114#133#0" expanded="true" />
             <element signature="e#184#193#0" expanded="true" />
@@ -867,20 +887,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Queue.h">
+    <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="75" column="14" lean-forward="true" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
-          <folding />
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="e#120#139#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
+    <entry file="file://$PROJECT_DIR$/QuickSort.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
-            <element signature="e#120#139#0" expanded="true" />
+            <element signature="e#161#170#0" expanded="true" />
+            <element signature="e#235#244#0" expanded="true" />
+            <element signature="e#371#380#0" expanded="true" />
           </folding>
         </state>
       </provider>

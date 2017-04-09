@@ -109,6 +109,9 @@
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h">
 			<Option target="MyDataStructure"/>
 		</Unit>
+		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/QuickSort.h">
+			<Option target="MyDataStructure"/>
+		</Unit>
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp">
 			<Option target="MyDataStructure"/>
 		</Unit>

@@ -7,20 +7,18 @@
 //
 
 #include <iostream>
-#include "LinkedBTree.h"
+#include "QuickSort.h"
 
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-    LinkedBTree<int>* linkedBTree = new LinkedBTree<int>(1);
+    int A[] = {9,8,7,6,5,4,3,2,1};
 
-    linkedBTree->addRight(2);
-    linkedBTree->addLeft(3);
-    
+    quick_sort(A , 9);
 
-    cout << linkedBTree->readNow() << endl;
-
-    delete linkedBTree;
+    for (int i = 0; i < 9; ++i) {
+        cout << A[i] << endl;
+    }
 
     return 0;
 }

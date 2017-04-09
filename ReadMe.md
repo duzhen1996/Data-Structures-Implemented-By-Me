@@ -1,5 +1,3 @@
-[TOC]
-
 # 常用数据结构与算法的实现
 
 ## KMP字符串匹配算法
@@ -45,7 +43,6 @@
         
 //        cout << patch_string_index << "," << goal_string_index << endl;
     }
-
 ```
 
 道理很简单，除了第一位，每一位的字符都要和tmp+1这个位置的字符比对一下。如果相等，那么就可以说明最大公共子字符串又扩充了一位。
@@ -453,7 +450,46 @@ insert_item(A[],newEle)
 
 快速排序的特点就是想起来很简单，但是实现起来就有不同的效果。他的核心在于“桩”这个概念，在每一个子列处理完之后，我们要达到一个效果，（假设是从小到大排列），我们要做的就是让比桩大的值都放在桩的右边，比桩小的值都放在桩的左边。然后将桩左边和右边的值分别递归，进行子列的处理。直到子列的大小只有1，递归停止。因为桩一般情况下都在两头，最后桩的位置又非常重要，我们要在最后将在数列中部符合要求的值和在头尾的桩进行交换，而什么叫“符合要求”我们要根据“桩”在头部开始尾部，以及这个队列最终是要从小到大还是从大到小排列有关。
 
+整个算法的设计如下。除了指向我们需要快排的子列的首指针和尾指针，我们还需要两个指针，一个指针指向我们正在扫描的数组元素（初始化的时候指向0位置），还有一个指针（如果是从小到大排列）大值与小值的边界（**一开始放在子列（前边界索引-1）的位置**）。
 
+```c++
+template<class T>
+void part_quick_sort(T *inputArr, int start, int end);
 
+template<class T>
+void quick_sort(T *inputArr, int len) {
+    //这个是一个递归的算法
+    part_quick_sort(inputArr, 0, len - 1);
+}
 
+//这个部分是要递归的函数，
+template<class T>
+void part_quick_sort(T *inputArr, int start, int end) {
+    //判定递归停止
+    if (start >= end ) {
+        //递归停止
+        return;
+    }
+
+    //我们需要初始化两个指针，一个指针从头开始扫描
+    int i = start - 1;
+    //这个变量是桩，桩在数组的最后
+    int pile = inputArr[end];
+    int tmp = 0;
+    for (int j = start; j <= end; ++j) {
+        //j这个索引从子列的头部开始扫描，如果发现桩比数组小，那么就让j当前指向的元素和i+1所在的元素交换，并且i向前移动
+        //对于i这个索引来说，我们要保证i是比桩小的，i+1是比桩大的。
+        //我们要把比桩小的往前扔
+        if (inputArr[j] <= pile) {
+            tmp = inputArr[j];
+            inputArr[j] = inputArr[i + 1];
+            inputArr[i + 1] = tmp;
+            i++;
+        }
+    }
+    //等循环结束之后，i所在的位置就是桩经过换到中间之后的位置。现在我们拆分数组，进行递归
+    part_quick_sort(inputArr, 0, i - 1);
+    part_quick_sort(inputArr, i + 1, end);
+}
+```
 
