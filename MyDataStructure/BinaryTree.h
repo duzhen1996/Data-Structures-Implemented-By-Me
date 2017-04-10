@@ -6,6 +6,7 @@
 #define MYDATASTRUCTURE_BINARYTREE_H
 
 #include <iostream>
+
 //二叉树的数组实现
 using namespace std;
 
@@ -19,10 +20,10 @@ public:
     void toRoot();
 
     //向当前节点的左节点移动
-    void goLeftChild();
+    void goLeft();
 
     //向当前节点的右节点移动
-    void goRightChild();
+    void goRight();
 
     //获取当前节点值
     T getElementValue();
@@ -38,7 +39,18 @@ public:
 
     int getNowIndex();
 
+    T readNow();
+
     T *getTreeContentPtr();
+
+    //以root节点为根进行前序遍历
+    void pre_order(int root);
+
+    //以root节点为根进行后续遍历
+    void post_order(int root);
+
+    //以root节点为根节点进行中序遍历
+    void in_order(int root);
 
     ~BinaryTree();
 
@@ -53,7 +65,7 @@ template<class T>
 BinaryTree<T>::BinaryTree(T rootContent) {
     nowIndex = 1;
     treeContent = new T[256];//我们保证可以进行最少八层二叉树的存储。
-    for (int i = 0; i < 256 ; ++i) {
+    for (int i = 0; i < 256; ++i) {
         treeContent[i] = -1;
     }
 
@@ -66,7 +78,7 @@ void BinaryTree<T>::toRoot() {
 }
 
 template<class T>
-void BinaryTree<T>::goLeftChild() {
+void BinaryTree<T>::goLeft() {
     if (nowIndex * 2 >= 256) {
         cout << "访问的位置超过了给树预留的空间" << endl;
         return;
@@ -78,7 +90,7 @@ void BinaryTree<T>::goLeftChild() {
 }
 
 template<class T>
-void BinaryTree<T>::goRightChild() {
+void BinaryTree<T>::goRight() {
     if (nowIndex * 2 + 1 >= 256) {
         cout << "访问的位置超过了给树预留的空间" << endl;
         return;
@@ -120,6 +132,11 @@ T BinaryTree<T>::getElementValue() {
     return treeContent[nowIndex];
 }
 
+template<class T>
+T BinaryTree<T>::readNow() {
+    return getElementValue();
+}
+
 
 template<class T>
 void BinaryTree<T>::delChildTree(int rootIndex) {
@@ -146,6 +163,47 @@ int BinaryTree<T>::getNowIndex() {
 template<class T>
 T *BinaryTree<T>::getTreeContentPtr() {
     return treeContent;
+}
+
+template<class T>
+void BinaryTree<T>::pre_order(int root) {
+    //这是一个递归算法。
+    //我们首先打印根节点元素，然后再分别递归左右节点
+    //设定递归完成条件
+    if (root >= 256 || treeContent[root] == -1) {
+        //递归退出
+        return;
+    }
+    //打印根节点
+    cout << treeContent[root] << " , ";
+    //递归左节点和右节点
+    pre_order(root * 2);
+    pre_order(root * 2 + 1);
+}
+
+template<class T>
+void BinaryTree<T>::post_order(int root) {
+    //首先规定递归退出条件
+    if (root >= 256 || treeContent[root] == -1) {
+        return;
+    }
+
+    //先左右节点递归，然后打印根节点
+    post_order(root * 2);
+    post_order(root * 2 + 1);
+    cout << treeContent[root] << " , ";
+}
+
+template<class T>
+void BinaryTree<T>::in_order(int root) {
+    //规定退出条件
+    if (root >= 256 || treeContent[root] == -1) {
+        return;
+    }
+    //中序遍历，首先递归左节点、打印根节点、递归右节点
+    in_order(root * 2);
+    cout << treeContent[root] << " , ";
+    in_order(root * 2 + 1);
 }
 
 

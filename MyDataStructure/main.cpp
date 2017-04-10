@@ -7,18 +7,32 @@
 //
 
 #include <iostream>
-#include "QuickSort.h"
+#include "LinkedBTree.h"
+#include "BinaryTree.h"
 
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-    int A[] = {9,8,7,6,5,4,3,2,1};
+    BinaryTree<int> *binaryTree = new BinaryTree<int>(1);
 
-    quick_sort(A , 9);
+    binaryTree->editLeft(2);
+    binaryTree->editRight(3);
 
-    for (int i = 0; i < 9; ++i) {
-        cout << A[i] << endl;
-    }
+    binaryTree->goLeft();
+    binaryTree->editLeft(4);
+    binaryTree->editRight(5);
 
+    binaryTree->toRoot();
+
+    binaryTree->goRight();
+    binaryTree->editLeft(6);
+    binaryTree->editRight(7);
+
+    binaryTree->pre_order(1);
+    cout << endl;
+    binaryTree->post_order(1);
+    cout << endl;
+    binaryTree->in_order(1);
+    cout << endl;
     return 0;
 }
