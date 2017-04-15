@@ -7,32 +7,22 @@
 //
 
 #include <iostream>
-#include "LinkedBTree.h"
-#include "BinaryTree.h"
+#include "CountSort.h"
 
 using namespace std;
 
 int main(int argc, const char *argv[]) {
-    BinaryTree<int> *binaryTree = new BinaryTree<int>(1);
+    int* input = new int[8];
 
-    binaryTree->editLeft(2);
-    binaryTree->editRight(3);
+    for (int j = 0; j < 8; ++j) {
+        input[j] = 8-j;
+    }
 
-    binaryTree->goLeft();
-    binaryTree->editLeft(4);
-    binaryTree->editRight(5);
+    count_sort(input , 8);
 
-    binaryTree->toRoot();
+    for (int i = 0; i < 8; ++i) {
+        cout << input[i] << " , ";
+    }
 
-    binaryTree->goRight();
-    binaryTree->editLeft(6);
-    binaryTree->editRight(7);
-
-    binaryTree->pre_order(1);
-    cout << endl;
-    binaryTree->post_order(1);
-    cout << endl;
-    binaryTree->in_order(1);
-    cout << endl;
     return 0;
 }
