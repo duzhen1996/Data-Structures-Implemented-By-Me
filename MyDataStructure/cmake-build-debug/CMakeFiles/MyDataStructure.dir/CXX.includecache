@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/zhendu/study/ClionProjects/MyDataStructure/CountSort.h
-iostream
--
-
 /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
 KMP.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h
@@ -30,11 +26,19 @@ iostream
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/Random_Select.h
+cstdlib
+-
+time.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/time.h
+iostream
+-
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 iostream
 -
-CountSort.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/CountSort.h
+Random_Select.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Random_Select.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string

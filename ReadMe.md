@@ -714,3 +714,77 @@ get_min_and_max(A[] , len)
 这个是一个比找最大值和最小值都要复杂的算法，整体的思路复用了快速排序算法的内容。我们知道快速排序的平均时间复杂度非常小，所以我们要在当中加入随机化因素。
 
 现在说说随机选择排序的算法思路。这个东西与快速排序有异曲同工之妙，或者说他就是一个进行了一半的快速排序，是一个会提前结束的“快速排序”。我么知道进行快速排序的一次递归之后，整个数组会被分成3个部分。一个是桩变量，一个是小于桩变量的数组，一个是大于桩变量的数组。因为小于桩变量的数组和大于桩变量的数组大小我们都是知道的。假设桩在数组中第i个位置，我们可以证明，桩是第i+1小的数。假设我们要找的是第j小的数，如果j==i+1，那么就说明桩变量就是我们想要的。如果我们发现j\<i+1，那么我们要找的就是小于桩变量的数组的第j小的元素。如果j\>i+1，那么我们就要在大于桩变量的数组中找第j-i-1小的元素。所以说这个也是一个递归函数，而且与快速排序不同的是，这个是单侧，并且会提前停止的递归。递归的条件只有一个，那就是我们找到的桩在快速排序之后的索引，如果这个索引的大小+1和我们要找的第j小的这个j相等，那么就意味着我们找到的第j小的元素，并且递归结束。下面我们实际实现以下这个算法。
+
+```c++
+//第一个形参的输入数组，第二个形参为参与随机选择的数组的起始位置，第三个为参与随机选择的数组结束位置
+//第四个为我们要找的是当前范围第rank小的元素
+//我们借助快速排序从小到大排序
+template<class T>
+T random_select_fun(T *inputArr, int start, int end, int rank) {
+    //我们确定一个递归结束条件，这个if应该永远不会进入的
+    if (start > end) {
+        cout << "发生了错误" << endl;
+        return NULL;
+    }
+
+
+    //我们首先加入随机过程，随机制定start和end之间的数为桩
+    //首先我们摇一个种子
+    srand(time(0));
+    //找出一个桩
+    int stake = rand() % (end - start + 1) + start;
+    int tmp = inputArr[end];
+    inputArr[end] = inputArr[stake];
+    inputArr[stake] = tmp;
+    stake = end;
+
+    //桩的数值大小
+    int stackNum = inputArr[stake];
+
+    //然后进行类似于快速排序的工作，声明两个索引，一个是放在数组的第一位一个是放在-1位
+    //数组的扫描索引
+    int j;
+    //比桩变量小的数组的最大索引，i+1就是桩，i+2就是比桩大的第一个数
+    int i = start - 1;
+
+    for (int j = start; j <= end; ++j) {
+        //遍历我们要进行扫描和处理的数组
+        if (inputArr[j] <= stackNum) {
+            //发现有比桩小的数组，我们就把他们放到start和i（包括i）之间，主要是使用交换的方式
+            //因为桩还没有换过来，所以i+1就是比桩大的部分。
+            i++;
+            tmp = inputArr[i];
+            inputArr[i] = inputArr[j];
+            inputArr[j] = tmp;
+        }
+    }
+
+    //最后i就是桩所在的位置
+    //我们看看这个桩是不是我们需要的
+    //这里要注意，我们虽然发现桩是i，但是实际上i索引所对应的排位应该是i-start+1
+    if (rank == i - start + 1) {
+        return inputArr[i];
+    }
+
+    //如果我们要的数的排序比i+1要小，那么就要进行桩左部数组的递归
+    if (rank < i - start + 1) {
+        return random_select_fun(inputArr, start, i - 1, rank);
+    }
+
+    //如果我们要的数的排序比i+1要打，那么就要进行右部的递归
+    //我们首先要知道比i小的数在这个部分一共有多少个，也就是在i左面有多少个数，我们让i和start重合，取一个特殊值就知道有i-start个。
+    //所以rank要减去一个i还要减去i左边的数rank - (i - start) - 1
+    if (rank > i - start + 1) {
+        //这里递归调用的形参要好好注意
+        return random_select_fun(inputArr, i + 1, end, rank - (i - start) - 1);
+    }
+}
+
+
+template<class T>
+T random_select(T *inputArr, int len, int rank) {
+    return random_select_fun(inputArr, 0, len - 1, rank);
+}
+```
+
+实现的难点就是关于桩在当前范围的数组中的排序的计算，要考虑随机选择的起始位置，以及递归调用的时候rank这个形参的计算。当+1-1算不清的时候我们可以适当取取特值。

@@ -7,7 +7,7 @@ CMakeFiles/MyDataStructure.dir/KMP.cpp.o: ../KMP.h
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.cpp
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.h
 
-CMakeFiles/MyDataStructure.dir/main.cpp.o: ../CountSort.h
+CMakeFiles/MyDataStructure.dir/main.cpp.o: ../Random_Select.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: ../nifix2postfix.cpp
