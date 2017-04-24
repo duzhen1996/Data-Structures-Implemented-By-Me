@@ -33,7 +33,7 @@ int main(int argc, const char *argv[]) {
 
     linkedBTree->addRight(7);
 
-    linkedBTree->pre_order();
+    linkedBTree->in_order();
 
     delete linkedBTree;
 

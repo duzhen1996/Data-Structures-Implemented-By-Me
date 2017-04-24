@@ -290,6 +290,48 @@ void LinkedBTree<T>::pre_order() {
     delete[]stack;
 }
 
+template<class T>
+void LinkedBTree<T>::in_order() {
+    //创造一个栈
+    LinkedBItem<T> **stack = new LinkedBItem<T> *[100];
+    //栈顶索引
+    int stackIndex = -1;
+
+    //根节点入栈
+    stack[++stackIndex] = root;
+
+    while (stackIndex != -1) {
+        now = stack[stackIndex];
+
+        //触发入栈正反馈
+        while (now->left != 0) {
+            stack[++stackIndex] = now->left;
+            now = now->left;
+        }
+
+        //现在栈顶节点已经没有左子树了
+        //我们可以出栈了
+        while (stackIndex != -1) {
+            //只要没有右子树出现，那就一直执行出栈操作
+            //出现右子树，弹出当前节点，加入右子树根节点
+            if (stack[stackIndex]->right != 0) {
+                //打印当前节点
+                cout << stack[stackIndex]->element << " , ";
+                //将当前节点换成右子树根节点
+                stack[stackIndex] = stack[stackIndex]->right;
+                //退出循环，并且进入外层循环的左子树入栈过程
+                break;
+            } else {
+                //没有右子树，那就一直弹栈
+                cout << stack[stackIndex]->element << " , ";
+                stackIndex--;
+            }
+        }
+    }
+    cout << endl;
+    delete[]stack;
+}
+
 
 //二叉树中每一个节点的结构
 template<class T>
