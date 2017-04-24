@@ -7,29 +7,35 @@
 //
 
 #include <iostream>
-#include "MultiTree.h"
+#include "LinkedBTree.h"
 
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    MultiTree<int> *multiTree = new MultiTree<int>(1);
+    LinkedBTree<int>* linkedBTree = new LinkedBTree<int>(1);
 
-    multiTree->addChild(2, 1);
+    linkedBTree->addLeft(2);
 
-    multiTree->addChild(3, 1);
+    linkedBTree->addRight(3);
 
-    multiTree->goChild();
+    linkedBTree->goLeft();
 
-    multiTree->goBrother();
+    linkedBTree->addLeft(4);
 
-    multiTree->goParent();
+    linkedBTree->addRight(5);
 
-    multiTree->delChild(2);
+    linkedBTree->toRoot();
 
-    cout << multiTree->getContent() << endl;
+    linkedBTree->goRight();
 
-    delete multiTree;
+    linkedBTree->addLeft(6);
+
+    linkedBTree->addRight(7);
+
+    linkedBTree->post_order();
+
+    delete linkedBTree;
 
     return 0;
 }

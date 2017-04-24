@@ -202,6 +202,84 @@
 
 我们在链表二叉树中进行了非递归遍历的实现。
 
+首先是后序遍历，这个遍历的我们需要有“几个注意”，因为是非递归的，所以我们需要对整个的遍历顺序过程极为了解，我们整体遍历的趋势应该是首先“一口气向左子树走到底”，在这过程中，所有的根节点一直入栈，直到“左不下去”了然后弹栈，弹栈的时候要看看栈中的节点有没有有没有右子树，如果有右子树，要优先进入右子树的遍历，也是在右子树中“一口气左到底”，然后不断入栈。在非递归的后序遍历算法中，入栈和出栈都是一种正反馈的过程，只要入栈就会一口气让一串左子树入栈，只要出栈，除非碰到栈顶元素有右子树（右子树会入栈，然后因为正反馈，会让右子树的所有左子树全部入栈），要不弹栈就不会停。
+
+在这个算法的实现中我们需要两个额外空间，一个是栈，一个是标记栈中节点有没有右子树的数组（严谨的实现应该不需要，只需要每次弹栈的时候看一下右子树指针就好）。
+
+```c++
+template<class T>
+void LinkedBTree<T>::post_order() {
+    //我们进行后序遍历，首先创建一个栈空间。
+    //栈空间存放树的节点
+    now = root;
+    LinkedBItem<T> **stack = new LinkedBItem<T> *[100];
+    //索引从-1开始，指向当前的栈顶
+    int stackIndex = -1;
+    //我们建立一个数组，主要是为了查看栈中节点的有没有右子树需要遍历，如果已经被遍历了，那就可以安心弹栈，如果没有被遍历
+    //那就只能只能再把右节点压栈。压栈是一个"正反馈"的过程，一旦出现了压栈，那就会一压到底，不断向左节点走，直到不能再压
+    //一旦压到不能再压，那就会进入弹栈程序，弹栈主要做的就是检查当前节点的右子树。
+    int *hasScanRight = new int[100];
+
+    //初始化数组
+    for (int i = 0; i < 100; ++i) {
+        hasScanRight[i] = 0;
+    }
+
+
+    //首先我们先让根节点入栈，然后触发"入栈正反馈"，直到now是空指针为止
+    stack[++stackIndex] = root;
+
+    if (root->right != 0) {
+        hasScanRight[stackIndex] = 1;
+    }
+
+    while (stackIndex != -1) {
+        now = stack[stackIndex];
+
+        while (now->left != 0) {
+            stack[++stackIndex] = now->left;
+            //入栈之后查看右节点的情况，然后修改那个查看右子树是不是已经被遍历的数组
+            if (stack[stackIndex]->right != 0) {
+                hasScanRight[stackIndex] = 1;
+            }
+
+            now = now->left;
+        }
+
+        //当完成"入栈正反馈"之后，我们就可以弹栈过程，弹栈的时候我们就可以看看是不是右子树有没有东西
+        while (stackIndex != -1 && hasScanRight[stackIndex] == 0) {
+            //如果右子树没有东西，那就进入正常的弹栈过程，弹栈也是一个正反馈过程如果，如果一直右子树没有东西，就可以一直弹
+            cout << stack[stackIndex]->element << " , ";
+            stackIndex--;
+        }
+
+        //从这个while中出来有两种情况，一种就是发现右子树还在的，一种就是stack已经空了
+        if (hasScanRight[stackIndex] == 1) {
+            //如果右子树有东西，那么我们就要进行新一轮的压栈操作，压栈的之后还要看看新入栈的节点有没有右子树
+            stack[stackIndex + 1] = stack[stackIndex]->right;
+
+            //右节点已经入栈，修改hasScanRight数组
+            hasScanRight[stackIndex] = 0;
+            stackIndex++;
+
+            if (stack[stackIndex]->right != NULL) {
+                hasScanRight[stackIndex] = 1;
+            }
+        }
+    }
+
+    cout << endl;
+    //析构申请的资源
+    delete[]stack;
+    
+    delete[]hasScanRight;
+}
+```
+
+
+
+
+
 # 常用算法整理与总结
 
 这一部分我们主要介绍一些我们无暇实现但是依旧是耳熟能详的算法。我们会尽可能加入一些思路甚至伪代码的实现。这一部分的内容主要来自于我看《算法导论》的体会与总结。

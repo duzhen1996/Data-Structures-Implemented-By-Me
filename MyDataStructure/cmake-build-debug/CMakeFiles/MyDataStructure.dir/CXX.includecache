@@ -18,6 +18,12 @@ stdio.h
 string
 -
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h
+iostream
+-
+Queue.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
 Maze.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
@@ -25,12 +31,6 @@ iostream
 -
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
-
-/Users/zhendu/study/ClionProjects/MyDataStructure/MultiTree.h
-iostream
--
-Queue.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h
 stdio.h
@@ -41,8 +41,8 @@ iostream
 /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 iostream
 -
-MultiTree.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/MultiTree.h
+LinkedBTree.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string

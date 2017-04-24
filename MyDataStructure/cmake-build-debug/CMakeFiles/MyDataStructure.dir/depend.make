@@ -7,7 +7,7 @@ CMakeFiles/MyDataStructure.dir/KMP.cpp.o: ../KMP.h
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.cpp
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.h
 
-CMakeFiles/MyDataStructure.dir/main.cpp.o: ../MultiTree.h
+CMakeFiles/MyDataStructure.dir/main.cpp.o: ../LinkedBTree.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../Queue.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../main.cpp
 
