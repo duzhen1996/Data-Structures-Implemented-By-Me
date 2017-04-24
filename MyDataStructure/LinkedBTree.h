@@ -43,6 +43,12 @@ public:
     //后序遍历
     void post_order();
 
+    //前序遍历
+    void pre_order();
+
+    //中序遍历
+    void in_order();
+
     ~LinkedBTree();
 
 private:
@@ -235,6 +241,53 @@ void LinkedBTree<T>::post_order() {
     delete[]stack;
 
     delete[]hasScanRight;
+}
+
+template<class T>
+void LinkedBTree<T>::pre_order() {
+    //前序遍历也需要一个树节点指针的栈区
+    LinkedBItem<T> **stack = new LinkedBItem<T> *[100];
+    //栈索引从-1开始
+    int stackIndex = -1;
+    now = root;
+    //然后我们让根节点进入栈
+    stack[++stackIndex] = root;
+    cout << stack[stackIndex]->element << " , ";
+    //然后开始前序遍历，栈不为空，遍历就继续
+    while (stackIndex != -1) {
+        //如果栈顶元素有左子树，激活入栈正反馈
+        now = stack[stackIndex];
+        //如果栈顶元素没有左子树了那就不用再压栈了
+        while (now->left != 0) {
+            stack[++stackIndex] = now->left;
+            cout << stack[stackIndex]->element << " , ";
+            now = now->left;
+        }
+
+        //到这里，栈顶元素就是没有左子树的二叉树节点了，我们弹栈，并且查看右子树，如果要弹栈的元素有右子树，那么在弹栈之后把右子树加入
+        //弹栈也是一个正反馈的过程，直到弹空或者发现当前栈顶节点有右子树（此时当前节点也会被弹出）
+        while (stackIndex != -1) {
+            //如果发现当前节点有右子树，那就停止弹栈，但是当前节点也会弹出
+            if (stack[stackIndex]->right != 0) {
+                //进行最后一次弹栈
+                stackIndex--;
+                //然后将右子树加入栈中
+                stack[stackIndex + 1] = stack[stackIndex + 1]->right;
+                stackIndex++;
+                //入栈要打印
+                cout << stack[stackIndex]->element << " , ";
+                //结束循环，回到外层循环顶部进行正反馈入栈，入栈会激活新的入栈
+                break;
+            } else {
+                //当前节点没有右子树直接弹栈，并且如果一直没有右子树，那就一直弹，也是正反馈
+                stackIndex--;
+            }
+        }
+    }
+    cout << endl;
+
+    //空间回收
+    delete[]stack;
 }
 
 
