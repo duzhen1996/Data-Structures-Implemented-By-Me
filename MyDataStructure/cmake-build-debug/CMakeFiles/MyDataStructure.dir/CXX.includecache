@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/BinarySearchTree.h
+iostream
+-
+Queue.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Queue.h
+LinkedBTree.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
 KMP.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h
@@ -41,8 +49,8 @@ iostream
 /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 iostream
 -
-LinkedBTree.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h
+BinarySearchTree.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/BinarySearchTree.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string

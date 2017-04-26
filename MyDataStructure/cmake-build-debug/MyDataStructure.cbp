@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/BinarySearchTree.h">
+			<Option target="MyDataStructure"/>
+		</Unit>
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/BinaryTree.h">
 			<Option target="MyDataStructure"/>
 		</Unit>

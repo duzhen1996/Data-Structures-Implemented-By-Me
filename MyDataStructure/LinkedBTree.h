@@ -49,9 +49,9 @@ public:
     //中序遍历
     void in_order();
 
-    ~LinkedBTree();
+    virtual ~LinkedBTree();
 
-private:
+protected:
     LinkedBItem<T> *root;
     LinkedBItem<T> *now;
 };
@@ -338,7 +338,7 @@ template<class T>
 class LinkedBItem {
     friend class LinkedBTree<T>;
 
-private:
+protected:
     //每个节点分别是左子树和右子树的指针
     LinkedBItem<T> *left;
     LinkedBItem<T> *right;

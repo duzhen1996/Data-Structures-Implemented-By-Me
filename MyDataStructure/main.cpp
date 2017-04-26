@@ -7,35 +7,44 @@
 //
 
 #include <iostream>
-#include "LinkedBTree.h"
+#include "BinarySearchTree.h"
 
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    LinkedBTree<int>* linkedBTree = new LinkedBTree<int>(1);
+    BinarySearchTree<int>* tree = new BinarySearchTree<int>(8);
 
-    linkedBTree->addLeft(2);
+    tree->insert(4);
+    tree->insert(12);
+    tree->insert(2);
+    tree->insert(6);
+    tree->insert(10);
+    tree->insert(14);
+    tree->insert(1);
+    tree->insert(3);
+    tree->insert(5);
+    tree->insert(7);
+    tree->insert(9);
+    tree->insert(11);
+    tree->insert(13);
+    tree->insert(15);
 
-    linkedBTree->addRight(3);
+    tree->delItem(10);
+    tree->delItem(11);
+    tree->delItem(4);
 
-    linkedBTree->goLeft();
+//    tree->insert(2);
+//
+//    tree->insert(3);
+//
+//    cout << tree->ifExist(2) << endl;
 
-    linkedBTree->addLeft(4);
+//    tree->delItem(2);
+//
+//    cout << tree->ifExist(2) << endl;
 
-    linkedBTree->addRight(5);
-
-    linkedBTree->toRoot();
-
-    linkedBTree->goRight();
-
-    linkedBTree->addLeft(6);
-
-    linkedBTree->addRight(7);
-
-    linkedBTree->in_order();
-
-    delete linkedBTree;
+    delete tree;
 
     return 0;
 }
