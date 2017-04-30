@@ -13,39 +13,37 @@ using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    BinarySearchTree<int>* tree = new BinarySearchTree<int>(8);
+	BinarySearchTree<int>* tree = new BinarySearchTree<int>(8);
 
-    tree->insert(4);
-    tree->insert(12);
-    tree->insert(2);
-    tree->insert(6);
-    tree->insert(10);
-    tree->insert(14);
-    tree->insert(1);
-    tree->insert(3);
-    tree->insert(5);
-    tree->insert(7);
-    tree->insert(9);
-    tree->insert(11);
-    tree->insert(13);
-    tree->insert(15);
+	tree->insert(4);
+	//tree->insert(12);
+	tree->insert(2);
+	tree->insert(6);
+	//tree->insert(10);
+	//tree->insert(14);
+	tree->insert(1);
+	tree->insert(3);
+	tree->insert(5);
+	tree->insert(7);
+	//tree->insert(9);
+	//tree->insert(11);
+	//tree->insert(13);
+	//tree->insert(15);
 
-    tree->delItem(10);
-    tree->delItem(11);
-    tree->delItem(4);
+	tree->delItem(8);
 
-//    tree->insert(2);
-//
-//    tree->insert(3);
-//
-//    cout << tree->ifExist(2) << endl;
+	//    tree->insert(2);
+	//
+	//    tree->insert(3);
+	//
+	//    cout << tree->ifExist(2) << endl;
 
-//    tree->delItem(2);
-//
-//    cout << tree->ifExist(2) << endl;
+	//    tree->delItem(2);
+	//
+	//    cout << tree->ifExist(2) << endl;
 
-    delete tree;
+	delete tree;
 
 	system("pause");
-    return 0;
+	return 0;
 }
