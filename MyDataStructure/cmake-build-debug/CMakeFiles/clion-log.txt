@@ -1,4 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/zhendu/study/ClionProjects/MyDataStructure
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug
