@@ -7,44 +7,40 @@
 //
 
 #include <iostream>
-#include "BinarySearchTree.h"
+#include "BTree.h"
 
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    BinarySearchTree<int>* tree = new BinarySearchTree<int>(8);
+    BTree<int> *bTree = new BTree<int>(8, 6);
 
-    tree->insert(4);
-    tree->insert(12);
-    tree->insert(2);
-    tree->insert(6);
-    tree->insert(10);
-    tree->insert(14);
-    tree->insert(1);
-    tree->insert(3);
-    tree->insert(5);
-    tree->insert(7);
-    tree->insert(9);
-    tree->insert(11);
-    tree->insert(13);
-    tree->insert(15);
+    bTree->printTree();
+    bTree->insertKey(7, bTree->root);
+    bTree->insertKey(6, bTree->root);
+    bTree->insertKey(9, bTree->root);
+    bTree->insertKey(10, bTree->root);
+    bTree->insertKey(11, bTree->root);
+    bTree->insertKey(12, bTree->root);
+    bTree->insertKey(13, bTree->root);
+    bTree->insertKey(14, bTree->root);
+    bTree->insertKey(15, bTree->root);
+    bTree->insertKey(16, bTree->root);
 
-    tree->delItem(10);
-    tree->delItem(11);
-    tree->delItem(4);
+    for (int i = 17; i < 30; ++i) {
+        bTree->insertKey(i, bTree->root);
+    }
 
-//    tree->insert(2);
-//
-//    tree->insert(3);
-//
-//    cout << tree->ifExist(2) << endl;
+//    BTreeItem<int> *prePtr = bTree->getPost(bTree->root, 1);
 
-//    tree->delItem(2);
-//
-//    cout << tree->ifExist(2) << endl;
+//    bTree->delItemKey();
 
-    delete tree;
+    bTree->printTree();
+
+
+    bTree->delItemKey(11);
+
+    bTree->printTree();
 
     return 0;
 }
