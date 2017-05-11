@@ -4,11 +4,14 @@
 CMakeFiles/MyDataStructure.dir/KMP.cpp.o
  /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
  /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h
+CMakeFiles/MyDataStructure.dir/LostTree.cpp.o
+ /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp
+ /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.h
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o
  /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
  /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o
- /Users/zhendu/study/ClionProjects/MyDataStructure/BTree.h
+ /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.h
  /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o
  /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp

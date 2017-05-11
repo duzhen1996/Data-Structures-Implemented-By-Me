@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/MyDataStructure.dir/KMP.cpp.o"
   "CMakeFiles/MyDataStructure.dir/Maze.cpp.o"
   "CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o"
+  "CMakeFiles/MyDataStructure.dir/LostTree.cpp.o"
   "MyDataStructure.pdb"
   "MyDataStructure"
 )

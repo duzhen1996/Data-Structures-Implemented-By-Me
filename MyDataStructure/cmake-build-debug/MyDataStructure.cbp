@@ -109,6 +109,12 @@
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedList.h">
 			<Option target="MyDataStructure"/>
 		</Unit>
+		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp">
+			<Option target="MyDataStructure"/>
+		</Unit>
+		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.h">
+			<Option target="MyDataStructure"/>
+		</Unit>
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp">
 			<Option target="MyDataStructure"/>
 		</Unit>

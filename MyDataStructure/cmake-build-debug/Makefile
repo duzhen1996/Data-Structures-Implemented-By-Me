@@ -150,6 +150,33 @@ KMP.cpp.s:
 	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/KMP.cpp.s
 .PHONY : KMP.cpp.s
 
+LostTree.o: LostTree.cpp.o
+
+.PHONY : LostTree.o
+
+# target to build an object file
+LostTree.cpp.o:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/LostTree.cpp.o
+.PHONY : LostTree.cpp.o
+
+LostTree.i: LostTree.cpp.i
+
+.PHONY : LostTree.i
+
+# target to preprocess a source file
+LostTree.cpp.i:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/LostTree.cpp.i
+.PHONY : LostTree.cpp.i
+
+LostTree.s: LostTree.cpp.s
+
+.PHONY : LostTree.s
+
+# target to generate assembly for a file
+LostTree.cpp.s:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/LostTree.cpp.s
+.PHONY : LostTree.cpp.s
+
 Maze.o: Maze.cpp.o
 
 .PHONY : Maze.o
@@ -243,6 +270,9 @@ help:
 	@echo "... KMP.o"
 	@echo "... KMP.i"
 	@echo "... KMP.s"
+	@echo "... LostTree.o"
+	@echo "... LostTree.i"
+	@echo "... LostTree.s"
 	@echo "... Maze.o"
 	@echo "... Maze.i"
 	@echo "... Maze.s"

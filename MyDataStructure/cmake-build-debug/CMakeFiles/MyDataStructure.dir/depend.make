@@ -4,10 +4,13 @@
 CMakeFiles/MyDataStructure.dir/KMP.cpp.o: ../KMP.cpp
 CMakeFiles/MyDataStructure.dir/KMP.cpp.o: ../KMP.h
 
+CMakeFiles/MyDataStructure.dir/LostTree.cpp.o: ../LostTree.cpp
+CMakeFiles/MyDataStructure.dir/LostTree.cpp.o: ../LostTree.h
+
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.cpp
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.h
 
-CMakeFiles/MyDataStructure.dir/main.cpp.o: ../BTree.h
+CMakeFiles/MyDataStructure.dir/main.cpp.o: ../LostTree.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: ../nifix2postfix.cpp

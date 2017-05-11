@@ -7,40 +7,31 @@
 //
 
 #include <iostream>
-#include "BTree.h"
+#include "LostTree.h"
 
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    BTree<int> *bTree = new BTree<int>(8, 6);
+    LostTree *lostTree = new LostTree(8);
 
-    bTree->printTree();
-    bTree->insertKey(7, bTree->root);
-    bTree->insertKey(6, bTree->root);
-    bTree->insertKey(9, bTree->root);
-    bTree->insertKey(10, bTree->root);
-    bTree->insertKey(11, bTree->root);
-    bTree->insertKey(12, bTree->root);
-    bTree->insertKey(13, bTree->root);
-    bTree->insertKey(14, bTree->root);
-    bTree->insertKey(15, bTree->root);
-    bTree->insertKey(16, bTree->root);
-
-    for (int i = 17; i < 30; ++i) {
-        bTree->insertKey(i, bTree->root);
-    }
-
-//    BTreeItem<int> *prePtr = bTree->getPost(bTree->root, 1);
-
-//    bTree->delItemKey();
-
-    bTree->printTree();
+    lostTree->buffer[0] = 10;
+    lostTree->buffer[1] = 9;
+    lostTree->buffer[2] = 20;
+    lostTree->buffer[3] = 6;
+    lostTree->buffer[4] = 8;
+    lostTree->buffer[5] = 9;
+    lostTree->buffer[6] = 90;
+    lostTree->buffer[7] = 17;
 
 
-    bTree->delItemKey(11);
+    lostTree->treeBuild();
 
-    bTree->printTree();
+    lostTree->printLostTree();
+
+    lostTree->popAndInsert(18);
+
+    lostTree->printLostTree();
 
     return 0;
 }
