@@ -10,7 +10,7 @@ CMakeFiles/MyDataStructure.dir/LostTree.cpp.o: ../LostTree.h
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.cpp
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.h
 
-CMakeFiles/MyDataStructure.dir/main.cpp.o: ../LostTree.h
+CMakeFiles/MyDataStructure.dir/main.cpp.o: ../MinMaxLeap.h
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: ../nifix2postfix.cpp

@@ -121,6 +121,9 @@
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h">
 			<Option target="MyDataStructure"/>
 		</Unit>
+		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/MinMaxLeap.h">
+			<Option target="MyDataStructure"/>
+		</Unit>
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/MultiTree.h">
 			<Option target="MyDataStructure"/>
 		</Unit>

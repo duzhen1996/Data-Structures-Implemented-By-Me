@@ -7,31 +7,43 @@
 //
 
 #include <iostream>
-#include "LostTree.h"
+#include "MinMaxLeap.h"
+#include <string>
 
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    LostTree *lostTree = new LostTree(8);
+    MinMaxLeap<string> *minMaxLeap = new MinMaxLeap<string>(40);
 
-    lostTree->buffer[0] = 10;
-    lostTree->buffer[1] = 9;
-    lostTree->buffer[2] = 20;
-    lostTree->buffer[3] = 6;
-    lostTree->buffer[4] = 8;
-    lostTree->buffer[5] = 9;
-    lostTree->buffer[6] = 90;
-    lostTree->buffer[7] = 17;
+    minMaxLeap->Insert(1, "h");
+    minMaxLeap->Insert(2, "e");
+    minMaxLeap->Insert(3, "l");
+    minMaxLeap->Insert(4, "l");
+    minMaxLeap->Insert(5, "o");
+    minMaxLeap->Insert(6, " ");
+    minMaxLeap->Insert(7, "w");
+    minMaxLeap->Insert(8, "o");
+    minMaxLeap->Insert(9, "r");
+    minMaxLeap->Insert(10, "l");
+    minMaxLeap->Insert(11, "d");
+    minMaxLeap->Insert(12, " ");
+    minMaxLeap->Insert(13, "m");
+    minMaxLeap->Insert(14, "y");
+    minMaxLeap->Insert(15, " ");
+    minMaxLeap->Insert(16, "g");
+    minMaxLeap->Insert(17, "o");
+    minMaxLeap->Insert(18, "d");
 
+    minMaxLeap->printAll();
 
-    lostTree->treeBuild();
+    cout << endl;
 
-    lostTree->printLostTree();
+    MinMaxLeapItem<string> *minMaxLeapItem = minMaxLeap->deleteMin();
 
-    lostTree->popAndInsert(18);
+    cout << "拿出节点: " << minMaxLeapItem << endl;
 
-    lostTree->printLostTree();
+    minMaxLeap->printAll();
 
     return 0;
 }

@@ -34,11 +34,19 @@ iostream
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.h
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/MinMaxLeap.h
+iostream
+-
+math.h
+-
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 iostream
 -
-LostTree.h
-/Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.h
+MinMaxLeap.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/MinMaxLeap.h
+string
+-
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string
