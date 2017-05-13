@@ -1444,5 +1444,71 @@ B+树是一种对于B树的改进。实现起来也会很不一样，首先就�
 
 我们之前尝试在模板类中进行运算符的重载，主要是在为一个模板类重新实现cout打印。但是老是出错，这是为什么，因为我们重载的这个运算符是一个友元函数。也就是说在模板类中不能声明一个带着类型变量T的友元函数，因为编译器会不知道这个T是个什么数据类型，从而报错。我们声明在class上面的上面的那个template对友元函数是不起作用的，因为friend函数并不是这个类的函数。
 
-那么现在问题来了，因为对于cout<<打印这种“<<”左边的类型完全不可能是当前this指针指向的数据类型。所以将运算符的重载放到成员函数中
+那么现在问题来了，因为对于cout<<打印这种“<<”左边的类型完全不可能是当前this指针指向的数据类型。所以将运算符的重载放到成员函数中是不可能的。所以我们直接在class声明之外，将运算符的重载作为普通的模板函数声明就好，像这样：
 
+```c++
+template<class T>
+class MinMaxLeapItem {
+    friend class MinMaxLeap<T>;
+
+public:
+    //我们重载一下打印的运算符
+//    friend ostream &operator<<(ostream& out, const MinMaxLeapItem<T>& minMaxLeapItem);
+
+    //构造函数
+    MinMaxLeapItem(int key, T value);
+
+    int getKey() const;
+
+    T getValue() const;
+
+private:
+    int key;
+    T value;
+};
+
+template<class T>
+ostream &operator<<(ostream &out,const MinMaxLeapItem<T>* &minMaxLeapItem) {
+    out << "进入" << endl;
+    out << minMaxLeapItem->getKey() << " , " << minMaxLeapItem->getValue();
+    //递归返回，方便级联调用
+    //并且因为cout并没有实现良好的拷贝构造函数，所以我们必须返回引用
+    return out;
+};
+```
+
+因为没有了友元函数，所以我们的运算符模板函数不能直接调用类的私有数据成员，我们需要get函数。
+
+## 引用传参、拷贝传参与const
+
+时刻要记住，C++的const数据类型我们理解为是单独的，也就是说const与const int是两种数据类型，他在必要的时候，int这种普通类型是可以转化为const int这种常量类型的，但是反之就不可以了。
+
+下面我们看一个很有意思的例子。
+
+```C++
+template<class T>
+ostream &operator<<(ostream &out,const MinMaxLeapItem<T>* minMaxLeapItem) {
+    out << "进入" << endl;
+    out << minMaxLeapItem->getKey() << " , " << minMaxLeapItem->getValue();
+    //递归返回，方便级联调用
+    //并且因为cout并没有实现良好的拷贝构造函数，所以我们必须返回引用
+    return out;
+};
+```
+
+对于这样的一个函数，我们cout后面可以接一个`MinMaxLeapItem<T>`类型的常量以及非常量的指针，因为因为我们是拷贝传值，所以就好像我们把一个int类型的数据赋值给一个const int类型的数据一样。所以我们`cout<<`后面不管接的是不是常量都是没有事的。那么如果我换一下。
+
+```C++
+template<class T>
+ostream &operator<<(ostream &out,const MinMaxLeapItem<T>* &minMaxLeapItem) {
+    out << "进入" << endl;
+    out << minMaxLeapItem->getKey() << " , " << minMaxLeapItem->getValue();
+    //递归返回，方便级联调用
+    //并且因为cout并没有实现良好的拷贝构造函数，所以我们必须返回引用
+    return out;
+};
+```
+
+好的现在我变成了常量的指针的引用呢。这就不一样了，如果我`cout<<`后面是一个const类型的指针，那是没事的。如果`cout<<`后面不是一个常量的指针，那么我们只能打印出一个地址，没有掉起来重载函数。难道不会强制类型转换吗？实际上应该是会的，但是因为cout后面跟非常量指针引用的这个模式已经有默认实现了，所以编译器就不会调用我们重载的那个实现。
+
+所以还是不要用引用这个东西了。
