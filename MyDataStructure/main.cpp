@@ -7,43 +7,54 @@
 //
 
 #include <iostream>
-#include "MinMaxLeap.h"
-#include <string>
+#include "Graph.h"
 
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
-    MinMaxLeap<string> *minMaxLeap = new MinMaxLeap<string>(40);
+    Graph *graph = new Graph(5);
 
-    minMaxLeap->Insert(1, "h");
-    minMaxLeap->Insert(2, "e");
-    minMaxLeap->Insert(3, "l");
-    minMaxLeap->Insert(4, "l");
-    minMaxLeap->Insert(5, "o");
-    minMaxLeap->Insert(6, " ");
-    minMaxLeap->Insert(7, "w");
-    minMaxLeap->Insert(8, "o");
-    minMaxLeap->Insert(9, "r");
-    minMaxLeap->Insert(10, "l");
-    minMaxLeap->Insert(11, "d");
-    minMaxLeap->Insert(12, " ");
-    minMaxLeap->Insert(13, "m");
-    minMaxLeap->Insert(14, "y");
-    minMaxLeap->Insert(15, " ");
-    minMaxLeap->Insert(16, "g");
-    minMaxLeap->Insert(17, "o");
-    minMaxLeap->Insert(18, "d");
+    graph->insert(0, 1);
+    graph->insert(0, 4);
+    graph->insert(1, 0);
+    graph->insert(1, 4);
+    graph->insert(1, 2);
+    graph->insert(1, 3);
+    graph->insert(2, 1);
+    graph->insert(2, 3);
+    graph->insert(3, 1);
+    graph->insert(3, 4);
+    graph->insert(3, 2);
+    graph->insert(4, 3);
+    graph->insert(4, 0);
+    graph->insert(4, 1);
 
-    minMaxLeap->printAll();
+
+    int *parent;
+
+    int *length;
+
+    graph->BSF(0, parent, length);
+
+    cout << endl << "打印每个节点与根之间的距离:" << endl;
+
+    for (int i = 0; i < graph->getGraphSize(); ++i) {
+        cout << length[i] << endl;
+    }
 
     cout << endl;
 
-    MinMaxLeapItem<string> *minMaxLeapItem = minMaxLeap->deleteMin();
 
-    cout << "拿出节点: " << minMaxLeapItem << endl;
+    cout << endl << "打印每个节点的父节点:" << endl;
 
-    minMaxLeap->printAll();
+    for (int i = 0; i < graph->getGraphSize(); ++i) {
+        cout << parent[i] << endl;
+    }
+
+    cout << endl;
+
+    cout << graph << endl;
 
     return 0;
 }

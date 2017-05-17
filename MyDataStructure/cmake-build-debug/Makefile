@@ -123,6 +123,33 @@ MyDataStructure/fast:
 	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/build
 .PHONY : MyDataStructure/fast
 
+Graph.o: Graph.cpp.o
+
+.PHONY : Graph.o
+
+# target to build an object file
+Graph.cpp.o:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/Graph.cpp.o
+.PHONY : Graph.cpp.o
+
+Graph.i: Graph.cpp.i
+
+.PHONY : Graph.i
+
+# target to preprocess a source file
+Graph.cpp.i:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/Graph.cpp.i
+.PHONY : Graph.cpp.i
+
+Graph.s: Graph.cpp.s
+
+.PHONY : Graph.s
+
+# target to generate assembly for a file
+Graph.cpp.s:
+	$(MAKE) -f CMakeFiles/MyDataStructure.dir/build.make CMakeFiles/MyDataStructure.dir/Graph.cpp.s
+.PHONY : Graph.cpp.s
+
 KMP.o: KMP.cpp.o
 
 .PHONY : KMP.o
@@ -267,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... MyDataStructure"
+	@echo "... Graph.o"
+	@echo "... Graph.i"
+	@echo "... Graph.s"
 	@echo "... KMP.o"
 	@echo "... KMP.i"
 	@echo "... KMP.s"
