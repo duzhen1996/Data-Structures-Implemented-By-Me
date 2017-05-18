@@ -3,7 +3,6 @@
 //
 
 #include "Graph.h"
-#include <iostream>
 
 using namespace std;
 
@@ -140,4 +139,70 @@ void Graph::BSF(int start, int *&parent, int *&length) {
 
 int Graph::getGraphSize() const {
     return graphSize;
+}
+
+void Graph::DSF(int *&parent, int *&inTime, int *&outTime) {
+    int time = 0;
+
+    //创建颜色数组
+    int *color = new int[graphSize];
+
+    for (int j = 0; j < graphSize; ++j) {
+        color[j] = 0;
+    }
+
+    //创建父节点数组
+    parent = new int[graphSize];
+
+    for (int k = 0; k < graphSize; ++k) {
+        parent[k] = -1;
+    }
+
+    //创建时间戳
+    inTime = new int[graphSize];
+    outTime = new int[graphSize];
+
+    for (int l = 0; l < graphSize; ++l) {
+        inTime[l] = 0;
+        outTime[l] = 0;
+    }
+
+
+    //遍历每一个节点，对每一个节点触发深度优先搜索
+    for (int i = 0; i < graphSize; ++i) {
+        //如果是白色的就开始深度优先遍历的递归程序
+        if (color[i] == 0) {
+            //开启深度优先遍历
+            //我们需要在插入之前改变节点的颜色
+            DSF(i, parent, inTime, outTime, color, time);
+        }
+    }
+}
+
+void Graph::DSF(int start, int *parent, int *inTime, int *outTime, int *color, int &time) {
+    //这里开始进行深度优先遍历的递归算法
+    //我们遍历start节点作为起点的左右终点。
+
+    //这里进行颜色，时间戳的修改
+    inTime[start] = time;
+    color[start] = 1;
+    time++;
+
+    GraphItem *scan = itemArr[start];
+    while (scan != 0) {
+        //看看这个节点需不需要深度优先遍历
+        if (color[scan->itemCode] == 0) {
+            //递归调用这个节点在图中的子节点
+            //父节点设定
+            parent[scan->itemCode] = start;
+            DSF(scan->itemCode, parent, inTime, outTime, color, time);
+        }
+
+        scan = scan->next;
+    }
+
+    //颜色时间戳的修改
+    outTime[start] = time;
+    color[start] = 2;
+    time++;
 }

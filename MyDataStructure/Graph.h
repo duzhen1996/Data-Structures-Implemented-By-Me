@@ -34,6 +34,12 @@ public:
     //第3个形参是一个数组，存的是每个节点与起始节点之间的距离
     void BSF(int start, int *&parent, int *&length);
 
+    //这里是深度优先遍历，我们设定两个同名函数来进行重载，这个是驱动函数
+    void DSF(int *&parent, int *&inTime, int *&outTime);
+
+    //这个是真正参与递归的函数
+    void DSF(int start, int *parent, int *inTime, int *outTime, int *color, int &time);
+
     int getGraphSize() const;
 
 private:

@@ -33,23 +33,43 @@ int main(int argc, const char *argv[]) {
 
     int *parent;
 
-    int *length;
+//    int *length;
 
-    graph->BSF(0, parent, length);
+    int *inTime;
 
-    cout << endl << "打印每个节点与根之间的距离:" << endl;
+    int *outTime;
 
-    for (int i = 0; i < graph->getGraphSize(); ++i) {
-        cout << length[i] << endl;
-    }
+    graph->DSF(parent, inTime, outTime);
 
-    cout << endl;
+//    cout << endl << "打印每个节点与根之间的距离:" << endl;
+//
+//    for (int i = 0; i < graph->getGraphSize(); ++i) {
+//        cout << length[i] << endl;
+//    }
+//
+//    cout << endl;
 
 
     cout << endl << "打印每个节点的父节点:" << endl;
 
     for (int i = 0; i < graph->getGraphSize(); ++i) {
         cout << parent[i] << endl;
+    }
+
+    cout << endl;
+
+    cout << endl << "打印入栈时间戳:" << endl;
+
+    for (int i = 0; i < graph->getGraphSize(); ++i) {
+        cout << inTime[i] << endl;
+    }
+
+    cout << endl;
+
+    cout << endl << "打印出栈时间戳:" << endl;
+
+    for (int i = 0; i < graph->getGraphSize(); ++i) {
+        cout << outTime[i] << endl;
     }
 
     cout << endl;
