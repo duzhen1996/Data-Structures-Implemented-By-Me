@@ -109,6 +109,9 @@
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/KMP.h">
 			<Option target="MyDataStructure"/>
 		</Unit>
+		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/Kruskal.h">
+			<Option target="MyDataStructure"/>
+		</Unit>
 		<Unit filename="/Users/zhendu/study/ClionProjects/MyDataStructure/LinkedBTree.h">
 			<Option target="MyDataStructure"/>
 		</Unit>

@@ -21,7 +21,7 @@ public:
 
 
     //为节点添加一条边，形参分别是边的起点和终点
-    void insert(int start, int end);
+    void insert(int start, int end, int cost = 0);
 
     //这里进行图的邻接表的打印
     friend ostream &operator<<(ostream &out, const Graph *graph);
@@ -42,6 +42,8 @@ public:
 
     int getGraphSize() const;
 
+    friend Graph *Kruskal(Graph *inputGraph);
+
 private:
     //这里维护两个变量，一个是Graph节点的数量，一个是一个线性表
     GraphItem **itemArr;
@@ -57,12 +59,16 @@ class GraphItem {
     //这里进行图的邻接表的打印
     friend ostream &operator<<(ostream &out, const Graph *graph);
 
+    friend Graph *Kruskal(Graph *inputGraph);
+
 public:
-    GraphItem(GraphItem *next, int itemCode);
+    GraphItem(GraphItem *next, int itemCode, int cost = 0);
 
 private:
     GraphItem *next;
     int itemCode;
+    //加入一个代价
+    int cost;
 };
 
 

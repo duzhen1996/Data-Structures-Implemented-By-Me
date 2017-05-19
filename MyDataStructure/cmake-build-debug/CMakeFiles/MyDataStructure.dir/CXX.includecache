@@ -28,6 +28,12 @@ stdio.h
 string
 -
 
+/Users/zhendu/study/ClionProjects/MyDataStructure/Kruskal.h
+Graph.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Graph.h
+iostream
+-
+
 /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp
 LostTree.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.h
@@ -49,6 +55,8 @@ iostream
 -
 Graph.h
 /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.h
+Kruskal.h
+/Users/zhendu/study/ClionProjects/MyDataStructure/Kruskal.h
 
 /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 string

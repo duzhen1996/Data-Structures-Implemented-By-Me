@@ -6,7 +6,11 @@
 
 using namespace std;
 
-GraphItem::GraphItem(GraphItem *next, int itemCode) : next(next), itemCode(itemCode) {}
+GraphItem::GraphItem(GraphItem *next, int itemCode, int cost) : next(next), itemCode(itemCode) {
+    //执行初始化
+//    cout << "初始化" << cost << endl;
+    this->cost = cost;
+}
 
 Graph::Graph(int size) {
     graphSize = size;
@@ -17,7 +21,8 @@ Graph::Graph(int size) {
     }
 }
 
-void Graph::insert(int start, int end) {
+void Graph::insert(int start, int end, int cost) {
+
 
     if (start > graphSize - 1 || end > graphSize - 1) {
         cout << "节点不在图中" << endl;
@@ -28,7 +33,7 @@ void Graph::insert(int start, int end) {
     GraphItem *insertPtr = itemArr[start];
 
     if (insertPtr == 0) {
-        itemArr[start] = new GraphItem(0, end);
+        itemArr[start] = new GraphItem(0, end , cost);
         return;
     }
 
@@ -37,7 +42,8 @@ void Graph::insert(int start, int end) {
     }
 
     //插入
-    insertPtr->next = new GraphItem(0, end);
+//    cout << endl <<  cost << endl;
+    insertPtr->next = new GraphItem(0, end, cost);
 }
 
 //在函数的形参里使用const是一种搞笑的行为，因为是拷贝传值+强制const类型转化，只能约束里面
