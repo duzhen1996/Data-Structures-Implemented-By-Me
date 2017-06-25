@@ -1585,45 +1585,46 @@ const int MAXNUM = 10;
 int dist[MAXNUM];
 //最短路径构成的树的某个节点的前趋节点
 int prev[MAXNUM];
-//
+//邻接矩阵，记录了两个点之间的距离
 int A[MAXUNM][MAXNUM];
 
-void Dijkstra(int v0)
-{
-  　　bool S[MAXNUM];                                  // 判断是否已存入该点到S集合中
-      int n=MAXNUM;
-  　　for(int i=1; i<=n; ++i)
- 　　 {
-      　　dist[i] = A[v0][i];
-      　　S[i] = false;                                // 初始都未用过该点
-      　　if(dist[i] == MAXINT)    
-            　　prev[i] = -1;
- 　　     else 
-            　　prev[i] = v0;
-   　　}
-   　 dist[v0] = 0;
-   　 S[v0] = true; 　　
- 　　 for(int i=2; i<=n; i++)
- 　　 {
-       　　int mindist = MAXINT;
-       　　int u = v0; 　　                            // 找出当前未使用的点j的dist[j]最小值
-      　　 for(int j=1; j<=n; ++j)
-      　　    if((!S[j]) && dist[j]<mindist)
-      　　    {
-         　　       u = j;                             // u保存当前邻接点中距离最小的点的号码 
-         　 　      mindist = dist[j];
-       　　   }
-       　　S[u] = true; 
-       　　for(int j=1; j<=n; j++)
-       　　    if((!S[j]) && A[u][j]<MAXINT)
-       　　    {
-           　    　if(dist[u] + A[u][j] < dist[j])     //在通过新加入的u点路径找到离v0点更短的路径  
-           　    　{
-                   　　dist[j] = dist[u] + A[u][j];    //更新dist 
-                   　　prev[j] = u;                    //记录前驱顶点 
-            　　    }
-        　    　}
-   　　}
+//形参是起始节点的编号
+void Dijkstra(int v0) {
+    //S是一个数组，已经找到最短路径的节点就会加入到这个数组中，代表这个节点的单源最短路径已经找到了
+    bool S[MAXNUM];
+	
+    int n = MAXNUM;
+    for (int i = 1; i <= n; ++i) {
+        dist[i] = A[v0][i];
+        S[i] = false;                                // 初始都未用过该点
+        if (dist[i] == MAXINT) {
+            prev[i] = -1;
+        } else {
+            prev[i] = v0;
+        }
+    }
+    dist[v0] = 0;
+    S[v0] = true;
+    for (int i = 2; i <= n; i++) {
+        int mindist = MAXINT;
+        int u = v0;                          // 找出当前未使用的点j的dist[j]最小值
+        for (int j = 1; j <= n; ++j) {
+            if ((!S[j]) && dist[j] < mindist) {
+                u = j;                             // u保存当前邻接点中距离最小的点的号码
+                mindist = dist[j];
+            }
+        }
+        S[u] = true;
+        for (int j = 1; j <= n; j++){
+            if ((!S[j]) && A[u][j] < MAXINT) {
+                if (dist[u] + A[u][j] < dist[j])     //在通过新加入的u点路径找到离v0点更短的路径
+                {
+                    dist[j] = dist[u] + A[u][j];    //更新dist
+                    prev[j] = u;                    //记录前驱顶点
+                }
+            }
+        }
+    }
 }
 ```
 
