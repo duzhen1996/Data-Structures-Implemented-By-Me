@@ -1568,6 +1568,69 @@ Prim也是一种寻找最小生成树的策略，和克鲁斯卡尔算法不一�
 
 我们的整个算法就是进行整个图的RELAX操作。我们一个图中的每一个边都要进行一次RELAX处理，我们这种处理要进行很多轮，要进行的轮数和点的数量-1相等。因为我们知道单源最短路径组成的树最多有节点数量-1个边，而因为我们每进行一轮所有边的RELAX操作至少可以找到一个单源最短路径的树的一条边。这就是我们进行RELAX轮数设置的原则。
 
+对于单源最短路径问题的处理方法实际上很简单，我们使用一个gif就可以一眼望穿。
+
+![](http://pic002.cnblogs.com/images/2012/426620/2012073019540660.gif)
+
+这个算法的思路主要来源于这个文章：[最短路径—Dijkstra算法和Floyd算法](http://www.cnblogs.com/biyeymyhjob/archive/2012/07/31/2615833.html)
+
+这里给出他的实现。
+
+```c++
+//这个代表最大的Int值，在初始化中使用，代表不连通的两个点，也代表一开始“最短路径”的初始值
+const int  MAXINT = 32767;
+//点的数量
+const int MAXNUM = 10;
+//和某个源节点最短路径的长度
+int dist[MAXNUM];
+//最短路径构成的树的某个节点的前趋节点
+int prev[MAXNUM];
+//
+int A[MAXUNM][MAXNUM];
+
+void Dijkstra(int v0)
+{
+  　　bool S[MAXNUM];                                  // 判断是否已存入该点到S集合中
+      int n=MAXNUM;
+  　　for(int i=1; i<=n; ++i)
+ 　　 {
+      　　dist[i] = A[v0][i];
+      　　S[i] = false;                                // 初始都未用过该点
+      　　if(dist[i] == MAXINT)    
+            　　prev[i] = -1;
+ 　　     else 
+            　　prev[i] = v0;
+   　　}
+   　 dist[v0] = 0;
+   　 S[v0] = true; 　　
+ 　　 for(int i=2; i<=n; i++)
+ 　　 {
+       　　int mindist = MAXINT;
+       　　int u = v0; 　　                            // 找出当前未使用的点j的dist[j]最小值
+      　　 for(int j=1; j<=n; ++j)
+      　　    if((!S[j]) && dist[j]<mindist)
+      　　    {
+         　　       u = j;                             // u保存当前邻接点中距离最小的点的号码 
+         　 　      mindist = dist[j];
+       　　   }
+       　　S[u] = true; 
+       　　for(int j=1; j<=n; j++)
+       　　    if((!S[j]) && A[u][j]<MAXINT)
+       　　    {
+           　    　if(dist[u] + A[u][j] < dist[j])     //在通过新加入的u点路径找到离v0点更短的路径  
+           　    　{
+                   　　dist[j] = dist[u] + A[u][j];    //更新dist 
+                   　　prev[j] = u;                    //记录前驱顶点 
+            　　    }
+        　    　}
+   　　}
+}
+```
+
+
+
+
+
 # 我们在实现中遇到的一些问题
 
 ## 在模板类中进行运算符重载
