@@ -60,15 +60,15 @@ include CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/main.cpp.o: CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/main.cpp.o: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/MyDataStructure.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/main.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/main.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp
 
 CMakeFiles/MyDataStructure.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDataStructure.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp > CMakeFiles/MyDataStructure.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp > CMakeFiles/MyDataStructure.dir/main.cpp.i
 
 CMakeFiles/MyDataStructure.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDataStructure.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp -o CMakeFiles/MyDataStructure.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/main.cpp -o CMakeFiles/MyDataStructure.dir/main.cpp.s
 
 CMakeFiles/MyDataStructure.dir/main.cpp.o.requires:
 
@@ -84,15 +84,15 @@ CMakeFiles/MyDataStructure.dir/main.cpp.o.provides.build: CMakeFiles/MyDataStruc
 CMakeFiles/MyDataStructure.dir/KMP.cpp.o: CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/KMP.cpp.o: ../KMP.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/MyDataStructure.dir/KMP.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/KMP.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/KMP.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp
 
 CMakeFiles/MyDataStructure.dir/KMP.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDataStructure.dir/KMP.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp > CMakeFiles/MyDataStructure.dir/KMP.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp > CMakeFiles/MyDataStructure.dir/KMP.cpp.i
 
 CMakeFiles/MyDataStructure.dir/KMP.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDataStructure.dir/KMP.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp -o CMakeFiles/MyDataStructure.dir/KMP.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/KMP.cpp -o CMakeFiles/MyDataStructure.dir/KMP.cpp.s
 
 CMakeFiles/MyDataStructure.dir/KMP.cpp.o.requires:
 
@@ -108,15 +108,15 @@ CMakeFiles/MyDataStructure.dir/KMP.cpp.o.provides.build: CMakeFiles/MyDataStruct
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o: ../Maze.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/MyDataStructure.dir/Maze.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/Maze.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/Maze.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp
 
 CMakeFiles/MyDataStructure.dir/Maze.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDataStructure.dir/Maze.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp > CMakeFiles/MyDataStructure.dir/Maze.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp > CMakeFiles/MyDataStructure.dir/Maze.cpp.i
 
 CMakeFiles/MyDataStructure.dir/Maze.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDataStructure.dir/Maze.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp -o CMakeFiles/MyDataStructure.dir/Maze.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/Maze.cpp -o CMakeFiles/MyDataStructure.dir/Maze.cpp.s
 
 CMakeFiles/MyDataStructure.dir/Maze.cpp.o.requires:
 
@@ -132,15 +132,15 @@ CMakeFiles/MyDataStructure.dir/Maze.cpp.o.provides.build: CMakeFiles/MyDataStruc
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o: ../nifix2postfix.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp
 
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp > CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp > CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.i
 
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp -o CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/nifix2postfix.cpp -o CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.s
 
 CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o.requires:
 
@@ -156,15 +156,15 @@ CMakeFiles/MyDataStructure.dir/nifix2postfix.cpp.o.provides.build: CMakeFiles/My
 CMakeFiles/MyDataStructure.dir/LostTree.cpp.o: CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/LostTree.cpp.o: ../LostTree.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/MyDataStructure.dir/LostTree.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/LostTree.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/LostTree.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp
 
 CMakeFiles/MyDataStructure.dir/LostTree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDataStructure.dir/LostTree.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp > CMakeFiles/MyDataStructure.dir/LostTree.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp > CMakeFiles/MyDataStructure.dir/LostTree.cpp.i
 
 CMakeFiles/MyDataStructure.dir/LostTree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDataStructure.dir/LostTree.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp -o CMakeFiles/MyDataStructure.dir/LostTree.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/LostTree.cpp -o CMakeFiles/MyDataStructure.dir/LostTree.cpp.s
 
 CMakeFiles/MyDataStructure.dir/LostTree.cpp.o.requires:
 
@@ -180,15 +180,15 @@ CMakeFiles/MyDataStructure.dir/LostTree.cpp.o.provides.build: CMakeFiles/MyDataS
 CMakeFiles/MyDataStructure.dir/Graph.cpp.o: CMakeFiles/MyDataStructure.dir/flags.make
 CMakeFiles/MyDataStructure.dir/Graph.cpp.o: ../Graph.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/zhendu/study/ClionProjects/MyDataStructure/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/MyDataStructure.dir/Graph.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/Graph.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.cpp
+	/Library/Developer/CommandLineTools/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/MyDataStructure.dir/Graph.cpp.o -c /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.cpp
 
 CMakeFiles/MyDataStructure.dir/Graph.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/MyDataStructure.dir/Graph.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.cpp > CMakeFiles/MyDataStructure.dir/Graph.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.cpp > CMakeFiles/MyDataStructure.dir/Graph.cpp.i
 
 CMakeFiles/MyDataStructure.dir/Graph.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MyDataStructure.dir/Graph.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.cpp -o CMakeFiles/MyDataStructure.dir/Graph.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/zhendu/study/ClionProjects/MyDataStructure/Graph.cpp -o CMakeFiles/MyDataStructure.dir/Graph.cpp.s
 
 CMakeFiles/MyDataStructure.dir/Graph.cpp.o.requires:
 

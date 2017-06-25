@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-using namespace std;
+using namespace std; 
 
 //输入参数为一个输入数组的指针，以及输入数组的长度
 //这里我们对自然数进行排序
