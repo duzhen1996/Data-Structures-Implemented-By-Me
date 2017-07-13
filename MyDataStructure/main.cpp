@@ -7,56 +7,26 @@
 //
 
 #include <iostream>
-#include "Dijkstra.h"
+#include "ALVTree.h"
 
+typedef ldiv_t;;
 using namespace std;
 
 
 int main(int argc, const char *argv[]) {
+    ALVTree<int> *alvTree = new ALVTree<int>(0);
+    //测试右旋函数
+    alvTree->insert(0);
+    alvTree->insert(1);
+    alvTree->insert(-3);
+    alvTree->insert(-4);
+    alvTree->insert(-2);
+    alvTree->insert(2);
+    alvTree->insert(-1);
 
-    int itemCount = 7;
 
-    int *dist = new int[itemCount];
+    alvTree->deleteItem(2);
 
-    int *prev = new int[itemCount];
+    alvTree->pre_scan(alvTree->getRoot());
 
-    //创造二维矩阵
-    int **Graph = new int *[itemCount];
-
-    for (int i = 0; i < itemCount; ++i) {
-        Graph[i] = new int[itemCount];
-    }
-
-    //邻接矩阵初始化
-    for (int k = 0; k < itemCount; ++k) {
-        for (int i = 0; i < itemCount; ++i) {
-            Graph[k][i] = MAX_INT;
-        }
-    }
-
-    //加入几条边
-    Graph[0][5] = 10;
-    Graph[0][1] = 22;
-    Graph[1][2] = 6;
-    Graph[5][6] = 7;
-    Graph[6][1] = 2;
-    Graph[6][4] = 11;
-    Graph[3][2] = 23;
-    Graph[3][4] = 12;
-
-    Dijkstra(dist, Graph, prev, itemCount, 0);
-
-    for (int k = 0; k < itemCount; ++k) {
-        cout << dist[k] << endl;
-    }
-
-    //析构
-    delete[]dist;
-    delete[]prev;
-
-    for (int j = 0; j < itemCount; ++j) {
-        delete[]Graph[j];
-    }
-
-    return 0;
 }
